@@ -164,3 +164,149 @@
      background-color:#35424a;
      text-align: center;
 }
+
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+body{
+  background-color: rgba(248, 246, 246, 0.849);
+}
+
+.wrapper{
+/*   border:solid black; */
+  display: -webkit-flex;
+  display: flex;
+  height: 100%;
+}
+
+.myForm{
+/*   border:solid black; */
+  background-color:white;
+  margin:50px auto;
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items:center;
+  width:25%;
+  min-width:400px;
+  border-radius:5px;
+/*   height:450px;     */
+}
+
+
+
+.formElement{
+/*   border:solid black; */
+/*   flex-basis:100%; */
+  width:90%;
+}
+
+
+
+.formInstructionsDiv{
+  width:100%; 
+/*   flex-grow:1; */
+  padding:15px 0;
+  background-color:#8c6ef8;
+  border-radius:5px;
+  border-bottom: solid #8c6ef8;
+  color:white; 
+ 
+}
+
+.formInstructionsDiv h2{
+  margin-left:5%;
+  font-size:3em;
+  font-family:"ebrima";
+  font-weight:lighter;
+}
+
+.formInstructionsDiv p{
+  margin-left:5%;
+  font-size:1em;
+  font-family: "ebrima";
+}
+.fillContentDiv{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  flex-grow:1;
+  margin-top:40px;
+  margin-bottom: 82px;
+  height:280px;
+  
+  
+}
+
+.formContentElement{
+  min-width:100%;
+}
+
+.names{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+
+}
+
+.names .inputRequest{
+  width:47.5%;
+  min-width:150px;
+}
+
+.names .inputRequest:last-child{
+/*   margin-right:5%; */
+}
+
+.otherInputs{
+
+}
+
+.otherInputs .inputRequest{
+
+}
+
+
+.inputRequest{
+/*   margin-bottom:20px; */
+  padding:15px;
+  font-size:1.2em;
+  background-color: #f2f2f2;
+  border-style:none;
+  border-radius:5px;
+}
+
+/* .inputRequest:focus{
+ border-style:solid;
+  b -width:3px;
+  boorderrder-color: #0d6380;
+} */
+
+
+.submitButton{
+  width:40%;
+  height:100%;
+  background-color: #8c6ef8;
+  border-style:none;
+  color:white;
+  font-size:1.2em;
+  font-weight:800;
+  cursor:pointer;
+  border-radius:5px;
+}
+
+.submitButton:hover{
+  background-color:#1d42e6;
+}
+.submitButtonDiv{
+  grow:1;
+  height:45px;
+/*   padding-bottom:40px; */
+  margin-bottom:20px;
+  
+}
+
