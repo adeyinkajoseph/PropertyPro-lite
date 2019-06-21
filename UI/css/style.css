@@ -310,3 +310,15 @@ body{
   
 }
 
+.fillContentDivLogin{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  flex-grow:1;
+  margin-top:40px;
+  margin-bottom: 82px;
+  height:150px;
+  
+  
+}
+
