@@ -4,6 +4,8 @@
   "description": "PropertyPro-lite is a platform where people can create and/or search properties for sale or rent",
   "main": "index.js",
   "dependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
     "express": "^4.17.1",
     "nodemon": "^1.19.1"
   },
@@ -13,11 +15,12 @@
     "@babel/preset-env": "^7.4.5",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.18.0"
+    "eslint-plugin-import": "^2.18.0",
+    "mocha": "^6.1.4"
   },
   "scripts": {
     "start": "nodemon --exec babel-node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --require @babel/register server/test/* --timeout 10s --exit"
   },
   "repository": {
     "type": "git",
