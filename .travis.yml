@@ -4,3 +4,7 @@ node_js:
 cache:
   directories:
     - "node_modules"
+
+after_script:
+  - nyc report --reporter=text-lcov | coveralls
+  - ./cc-test-reporter after-build -t lcov --exit-code $TRAVIS_TEST_RESULT
